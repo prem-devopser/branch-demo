@@ -2,6 +2,14 @@ pipeline {
     agent any
 
     stages {
+        
+        stage('code pull from main branch') {
+            steps {
+                git branch: '', url: 'https://github.com/prem-devopser/branch-demo/'
+            }
+        }
+        
+        
         stage('Hello') {
             steps {
                 sh 'cat file1.txt'
