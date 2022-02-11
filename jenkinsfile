@@ -10,9 +10,15 @@ pipeline {
         }
         
         
-        stage('Hello') {
+        stage('cat file 1') {
             steps {
                 sh 'cat file1.txt'
+            }
+        }
+        
+        stage('cat file 2') {
+            steps {
+                sh 'cat file2.txt'
             }
         }
     }
