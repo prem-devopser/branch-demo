@@ -5,7 +5,7 @@ pipeline {
         
         stage('code pull from main branch') {
             steps {
-                git branch: '', url: 'https://github.com/prem-devopser/branch-demo/'
+                git branch: 'main', url: 'https://github.com/prem-devopser/branch-demo/'
             }
         }
         
