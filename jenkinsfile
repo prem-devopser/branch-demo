@@ -16,10 +16,6 @@ pipeline {
             }
         }
         
-        stage('cat file 2') {
-            steps {
-                sh 'cat file2.txt'
-            }
-        }
+        
     }
 }
